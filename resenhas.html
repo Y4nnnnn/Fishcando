@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resenhas</title>
+
+    <link rel="stylesheet" href="resenhas.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    >
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <img src="./img/fiss.png" alt="Logo resenha">
+                <h1>FISHCANDO</h1>
+            </div>
+
+            <nav>
+                <a href="principal.html">Início</a>
+                <a href="filmes.html">Filmes</a>
+                <a href="resenhas.html" class="ativo">Resenhas</a>
+            </nav>
+
+           <div class="pesquisa">
+            <label for="searchInput">
+            <span>⌕</span>
+            </label>
+            <input type="text" id="searchInput" placeholder="Buscar por título, ator, diretor...">
+        </div>
+
+            <div class="icones">
+            <a href="profile.html">
+            <div class="perfil"><img src="./img/snow.jpg" alt="perfil"></a></div>
+        </div>
+        </header>
+
+             <div class="atividadet">
+              <span>AVALIAÇÕES FEITAS</span>
+              <span class="total">TOTAL: 0</span>
+            </div>
+
+            <div class="filmes"></div>
+            <div class="filmes"></div>
+
+</div>
+
+        </main>
+
+    </div>
+
+
+    <footer>
+        <div class="rodape-conteudo">
+            <div>
+                <h3>Fishcando</h3>
+                <p>
+                    Um espaço para compartilhar opiniões e falar sobre cinema.
+                </p>
+            </div>
+        </div>
+
+        <p class="direitos">
+            © 2026 Fishcando. Todos os direitos reservados.
+        </p>
+    </footer>
+
+<div class="modal" id="modalAvaliacao">
+
+    <div class="tudo">
+
+        <div class="top">
+
+            <h2>O que eu achei de. . .</h2>
+
+            <button type="button" class="x" id="fecharModal">
+                <i class="bi bi-x"></i>
+            </button>
+
+        </div>
+
+        <div class="bot">
+
+            <div class="poster">
+
+                <img
+                    class="movie"
+                    id="modalPoster"
+                    src=""
+                    alt="Poster do filme"
+                >
+
+            </div>
+
+            <div class="info">
+
+                <div class="titulo">
+
+                    <h1 id="modalTitulo">Nome do filme</h1>
+
+                    <h3 id="modalAno">Ano</h3>
+
+                </div>
+
+                <div class="likes">
+
+                    <div class="lik">
+
+                        <span>Avaliação</span>
+
+                        <div class="stars">
+
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">
+                                <i class="bi bi-star"></i>
+                            </label>
+
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">
+                                <i class="bi bi-star"></i>
+                            </label>
+
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">
+                                <i class="bi bi-star"></i>
+                            </label>
+
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">
+                                <i class="bi bi-star"></i>
+                            </label>
+
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">
+                                <i class="bi bi-star"></i>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="lik">
+
+                        <span>Amei</span>
+
+                        <div class="cora">
+
+                            <input type="checkbox" id="favorite">
+
+                            <label for="favorite">
+                                <i class="bi bi-heart"></i>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="inpu">
+
+                    <textarea
+                        class="opi"
+                        id="modalOpiniao"
+                        placeholder="Faça uma avaliação aqui. . ."
+                    ></textarea>
+
+                </div>
+
+                <div class="dois">
+
+                    <div class="inpud">
+
+                        <div class="taa">
+
+                            <span>Tags</span>
+                            <span>max: 8</span>
+
+                        </div>
+
+                        <input
+                            type="text"
+                            class="in"
+                            id="modalTag"
+                            placeholder="Ex: Terror"
+                        >
+
+                        <div class="tags" id="modalTags"></div>
+
+                    </div>
+
+                    <div class="vi">
+
+                        <input type="checkbox" id="miCheckbox">
+
+                        <span>Já vi antes</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="enviar" id="areaBotoes">
+
+            <button type="button" class="save" id="botaoEditar">
+                Editar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="perfil.js"></script>
+</body>
+</html>

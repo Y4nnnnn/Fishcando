@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+header {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    border-bottom: 1px solid #29252a;
+    gap: 45px;
+    background-color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 350px;
+}
+
+.logo img {
+    width: 105px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    color: #c20d4a;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 38px;
+    height: 100%;
+    align-items: center;
+}
+
+nav a {
+    color: #d7cbd3;
+    text-decoration: none;
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav a:hover {
+    color: #c20d4a;
+}
+
+nav .ativo {
+    color: #c20d4a;
+}
+
+nav .ativo::after {
+    content: "";
+    position: absolute;
+    bottom: 31px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #c20d4a;
+}
+
+.pesquisa {
+    margin-left: auto;
+    width: 520px;
+    height: 46px;
+    border: 1px solid #c20d4a;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+}
+
+.pesquisa span {
+    font-size: 30px;
+    color: #c20d4a;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+.pesquisa input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 13px;
+}
+
+.pesquisa input::placeholder {
+    color: #8e858d;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: #c20d4a;
+    font-size: 25px;
+}
+
+.perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destaque {
+    height: 475px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #29252a;
+}
+
+.informacoes {
+    width: 50%;
+    padding: 65px 0 40px 90px;
+    z-index: 2;
+    background: linear-gradient(
+        to right,
+        black 75%,
+        transparent
+    );
+}
+
+.pequeno {
+    color: #c20d4a;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.informacoes h2 {
+    color: #c20d4a;
+    font-size: 58px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.descricao {
+    color: #d7cbd3;
+    max-width: 470px;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.dados {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: #99919a;
+    font-size: 13px;
+    margin-bottom: 27px;
+}
+
+.dados strong {
+    color: #c20d4a;
+    font-size: 16px;
+}
+
+.botoes {
+    display: flex;
+    gap: 20px;
+}
+
+.botoes button {
+    height: 52px;
+    padding: 0 28px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.resenhaa {
+    border: none;
+    background-color: #c20d4a;
+    color: #111;
+    font-weight: 600;
+}
+
+.imagem-destaque {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 67%;
+    height: 100%;
+}
+
+.imagem-destaque img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagem-destaque::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        black 0%,
+        transparent 55%
+    );
+}
+
+.filmes {
+    padding: 30px 90px 50px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.titulo h2 {
+    color: #c20d4a;
+    font-size: 31px;
+    font-weight: 400;
+}
+
+.titulo span {
+    color: #c20d4a;
+    font-size: 32px;
+}
+
+.lista-filmes {
+    display: flex;
+    gap: 20px;
+}
+
+.filme {
+    width: 190px;
+    height: 285px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #3c343b;
+    flex-shrink: 0;
+    background-color: #181519;
+}
+
+.filme img {
+    width: 190px;
+    height: 285px;
+    object-fit: cover;
+}
+
+.nota {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 35px 12px 10px;
+    color: #c20d4a;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.9)
+    );
+}
+
+
+.filme:hover {
+    transform: translateY(-5px);
+    border-color: #c20d4a;
+}
+
+.filme {
+    transition: 0.2s;
+}
+
+
+.pagina-filmes {
+    padding: 50px 90px;
+}
+
+.pagina-filmes h2 {
+    color: #c20d4a;
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.pagina-filmes .lista-filmes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+}
+
+.pagina-filmes .filme {
+    width: 175px;
+    height: 285px;
+}
+
+.rodape-conteudo {
+    max-width: 1120px;
+    margin: auto;
+}
+
+footer h3 {
+    font-family: Georgia, serif;
+    color: #c20d4a;
+    font-size: 22px;
+    margin-bottom: 12px;
+    
+}
+
+footer p {
+    font-size: 14px;
+    color: #c20d4a;
+    
+}
+
+.direitos {
+    max-width: 1120px;
+    margin: 35px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #c20d4a;
+    font-size: 12px;
+    text-align: center;
+}
+
+.container {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.container.ativo {
+    display: flex;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container .tudo {
+    width: 85%;
+    height: 95%;
+    border: 2px solid #291526;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    overflow: hidden;
+}

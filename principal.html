@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/fiss.png" alt="Logo resenha">
+            <h1>FISHCANDO</h1>
+        </div>
+
+        <nav>
+            <a href="principal.html" class="ativo">Início</a>
+            <a href="filmes.html">Filmes</a>
+            <a href="resenhas.html">Resenhas</a>
+        </nav>
+
+        <div class="pesquisa">
+            <span>⌕</span>
+            <input type="text" placeholder="Buscar por título, ator, diretor...">
+        </div>
+
+        <div class="icones">
+            <a href="profile.html" class="perfil"><img src="./img/snow.jpg" alt="perfil"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="destaque">
+            <div class="informacoes">
+                <p class="pequeno">EM DESTAQUE</p>
+                <h2>JOGOS VORAZES</h2>
+                <p class="descricao">
+                    Katniss Everdeen voluntariamente se oferece no lugar da sua irmã nos Jogos Vorazes, uma competição onde jovens de cada um dos distritos de Panem são escolhidos aleatoriamente para lutar até a morte.
+                </p>
+
+                <div class="dados">
+                    <strong>★ 7,2</strong>
+                    <span>|</span>
+                    <span>2012</span>
+                    <span>|</span>
+                    <span>Ficção Científica</span>
+                    <span>•</span>
+                    <span>Distopia</span>
+                    <span>•</span>
+                    <span>Ação </span>
+                    <span>•</span>
+                    <span>Aventura</span>
+                </div>
+
+                <div class="botoes">
+                    <button class="resenhaa">
+                        ▶ &nbsp; Fazer Resenha
+                    </button>
+                </div>
+            </div>
+            <div class="imagem-destaque">
+                <img src="./img/jogos.jpg" alt="Jogos Vorazes">
+            </div>
+        </section>
+
+        <section class="filmes">
+            <div class="titulo">
+                <h2>FILMES EM ALTA</h2>
+                <span>→</span>
+            </div>
+
+            <div class="lista-filmes">
+               <div class="filme"  data-titulo="Mayday"
+     data-ano="2025"
+     data-poster="./img/may.jpg">
+                    <img src="./img/may.jpg" alt="Mayday">
+                    <div class="nota">
+                        ★ 6,8
+                    </div>
+                </div>
+
+                <div class="filme"  data-titulo="Homem-Aranha: Um Novo Dia"
+     data-ano="2026"
+     data-poster="./img/aranha.jpg">
+                    <img src="./img/aranha.jpg" alt="Homem-Aranha: Um Novo Dia">
+                    <div class="nota">
+                        ★ 8,0
+                    </div>
+                </div>
+
+                <div class="filme" data-titulo="Como Perder um Homem em 10 Dias"
+     data-ano="2003"
+     data-poster="./img/como.jpg">
+                    <img src="./img/como.jpg" alt="Como Perder um Homem em 10 Dias">
+                    <div class="nota">
+                        ★ 6,6
+                    </div>
+                </div>
+
+                <div class="filme" data-titulo="O Homem que Sussurra"
+     data-ano="2026"
+     data-poster="./img/home.jpg">
+                    <img src="./img/home.jpg" alt="O Homem que Sussurra">
+                    <div class="nota">
+                        ★ 6,2
+                    </div>
+                </div>
+
+                <div class="filme" data-titulo="Meninas Malvadas"
+     data-ano="2004"
+     data-poster="./img/he.jpg">
+                    <img src="./img/he.jpg" alt="Meninas Malvadas">
+                    <div class="nota">
+                        ★ 7,1
+                    </div>
+                </div>
+
+                <div class="filme" data-titulo="Quinze Dias"
+     data-ano="2026"
+     data-poster="./img/15.jpg">
+                    <img src="./img/15.jpg" alt="Quinze Dias">
+
+                    <div class="nota">
+                        ★ 6,9
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section class="filmes">
+            <div class="titulo">
+                <h2>NOS CINEMAS</h2>
+                <span>→</span>
+            </div>
+
+            <div class="lista-filmes">
+                 <div class="filme" data-titulo="O Fim da Rua"
+     data-ano="2026"
+     data-poster="./img/fim.jpg">
+                    <img src="./img/fim.jpg" alt="O Fim da Rua">
+                    <div class="nota">
+                        ★ 6,3
+                    </div>
+                </div>
+
+                <div class="filme" data-titulo="Minha Melhor Amiga"
+     data-ano="2026"
+     data-poster="./img/minha.jpg">
+                    <img src="./img/minha.jpg" alt="Minha Melhor Amiga">
+                    <div class="nota">
+                        ★ 7,0
+                    </div>
+                </div>
+
+                <div class="filme" data-titulo="Pinóguio: Maldição de Madeira"
+     data-ano="2026"
+     data-poster="./img/pino.jpg">
+                    <img src="./img/pino.jpg" alt="Pinóquio: Maldição de Madeira">
+                    <div class="nota">
+                        ★ 5,4
+                    </div>
+                </div>
+
+                <div class="filme" data-titulo="Zona Zero"
+     data-ano="2026"
+     data-poster="./img/zona.jpg">
+                    <img src="./img/zona.jpg" alt="Zona Zero">
+                    <div class="nota">
+                        ★ 6,5
+                    </div>
+                </div>
+
+                <div class="filme" data-titulo="Obcessão"
+     data-ano="2025"
+     data-poster="./img/ob.jpg">
+                    <img src="./img/ob.jpg" alt="Obsessão">
+                    <div class="nota">
+                        ★ 7,8
+                    </div>
+                </div>
+
+                <div class="filme" data-titulo="Buddy"
+     data-ano="2026"
+     data-poster="./img/bu.jpg">
+                    <img src="./img/bu.jpg" alt="Buddy">
+                    <div class="nota">
+                        ★ 7,0
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+         <section class="filmes">
+            <div class="titulo">
+                <h2>Filmes Premiados</h2>
+                <span>→</span>
+            </div>
+
+            <div class="lista-filmes">
+                <div class="filme" data-titulo="O Agente Secreto"
+     data-ano="2025"
+     data-poster="./img/agente.jpg">
+                        <img src="./img/agente.jpg" alt="O Agente Secreto">
+                        <div class="nota">
+                            ★ 7,2
+                        </div>
+                    </div>
+
+                    <div class="filme" data-titulo="Sonhos de Trem"
+     data-ano="2025"
+     data-poster="./img/sonhos.jpg">
+                        <img src="./img/sonhos.jpg" alt="Sonhos de Trem">
+                        <div class="nota">
+                            ★ 7,5
+                        </div>
+                    </div>
+
+                    <div class="filme" data-titulo="Frankenstein"
+     data-ano="2025"
+     data-poster="./img/fran.jpg">
+                        <img src="./img/fran.jpg" alt="Frankenstein">
+                        <div class="nota">
+                            ★ 7,4
+                        </div>
+                    </div>
+
+                    <div class="filme" data-titulo="Parasita"
+     data-ano="2019"
+     data-poster="./img/para.jpg">
+                        <img src="./img/para.jpg" alt="Parasita">
+                        <div class="nota">
+                            ★ 8,5
+                        </div>
+                    </div>
+
+                    <div class="filme" data-titulo="Rocketman"
+     data-ano="2019"
+     data-poster="./img/rock.jpg">
+                        <img src="./img/rock.jpg" alt="Rocketman">
+                        <div class="nota">
+                            ★ 7,3
+                        </div>
+                    </div>
+
+                    <div class="filme" data-titulo="Cisne Negro"
+     data-ano="2010"
+     data-poster="./img/cisne.jpg">
+                        <img src="./img/cisne.jpg" alt="Cisne Negro">
+                        <div class="nota">
+                            ★ 8,0
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape-conteudo">
+            <div>
+                <h3>Fishcando</h3>
+                <p>Um espaço para compartilhar opiniões e falar sobre cinema.</p>
+            </div>
+        </div>
+
+        <p class="direitos">© 2026 Fishcando. Todos os direitos reservados.</p>
+    </footer>
+
+   
+    <div class="container" id="modalAvaliacao">
+
+    <div class="tudo">
+
+        <div class="top">
+            <h2>O que eu achei de. . .</h2>
+
+            <button class="x" id="fecharModal">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+
+        <div class="bot">
+
+            <div class="poster">
+                <img
+                    class="movie"
+                    id="modalPoster"
+                    src=""
+                    alt="Poster do filme"
+                />
+            </div>
+
+            <div class="info">
+
+                <div class="tituloi">
+                    <h1 id="modalTitulo">Nome do filme</h1>
+                    <h3 id="modalAno">Ano</h3>
+                </div>
+
+                <div class="likes">
+
+                    <div class="lik">
+                        <span>Avaliação</span>
+
+                        <div class="stars">
+
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label for="star5">
+                                <i class="bi bi-star"></i>
+                            </label>
+
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label for="star4">
+                                <i class="bi bi-star"></i>
+                            </label>
+
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label for="star3">
+                                <i class="bi bi-star"></i>
+                            </label>
+
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label for="star2">
+                                <i class="bi bi-star"></i>
+                            </label>
+
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label for="star1">
+                                <i class="bi bi-star"></i>
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <div class="lik">
+
+                        <span>Amei</span>
+
+                        <div class="cora">
+
+                            <input type="checkbox" id="favorite">
+
+                            <label for="favorite">
+                                <i class="bi bi-heart"></i>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="inpu">
+
+                    <textarea
+                        class="opi"
+                        id="modalOpiniao"
+                        placeholder="Faça uma avaliação aqui. . ."></textarea>
+
+                </div>
+
+                <div class="dois">
+
+                    <div class="inpud">
+
+                        <div class="taa">
+                            <span>Tags</span>
+                            <span>max: 8</span>
+                        </div>
+
+                        <input
+                            type="text"
+                            class="in"
+                            id="modalTag"
+                            placeholder="Ex: Terror"
+                        />
+
+                        <div class="tags" id="modalTags"></div>
+
+                    </div>
+
+                    <div class="vi">
+
+                        <input type="checkbox" id="jaVi">
+
+                        <span>Já vi antes</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="enviar">
+
+            <button class="save" id="salvarAvaliacao">
+                Salvar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="pri.js"></script>
+</body>
+</html>
